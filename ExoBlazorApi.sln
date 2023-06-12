@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.BLL", "Blazor.BLL\Bl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.DAL", "Blazor.DAL\Blazor.DAL.csproj", "{2A4FF3FC-5C8F-4BA0-B762-7CA7ECBFD9FC}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BlazorDB", "BlazorDB\BlazorDB.sqlproj", "{90A990DE-471F-4387-BA7C-3555CFF93C04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{2A4FF3FC-5C8F-4BA0-B762-7CA7ECBFD9FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A4FF3FC-5C8F-4BA0-B762-7CA7ECBFD9FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A4FF3FC-5C8F-4BA0-B762-7CA7ECBFD9FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90A990DE-471F-4387-BA7C-3555CFF93C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90A990DE-471F-4387-BA7C-3555CFF93C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90A990DE-471F-4387-BA7C-3555CFF93C04}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{90A990DE-471F-4387-BA7C-3555CFF93C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90A990DE-471F-4387-BA7C-3555CFF93C04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90A990DE-471F-4387-BA7C-3555CFF93C04}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

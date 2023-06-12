@@ -16,5 +16,7 @@ namespace Blazor.BLL.Entities
         public string Password { get; set; }
         public RoleEnum Role { get; set; } = RoleEnum.user;
 
+
+
     }
 }
