@@ -9,6 +9,6 @@ namespace Blazor.DAL.Repositories
 {
     public interface IUserRepository
     {
-        IEnumerable<User> GetAll();
+        Task<IEnumerable<User>> GetAll();
     }
 }

@@ -10,6 +10,10 @@ namespace Blazor.DAL.Context
 
         public DbSet<Game> Games { get; set; }
 
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
+        {
+        }
+
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
         //    optionsBuilder.UseSqlServer(@"Server=GOS-VDI1202\TFTIC;"

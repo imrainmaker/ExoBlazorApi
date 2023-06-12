@@ -1,6 +1,7 @@
 ﻿using Blazor.DAL.Context;
 using Blazor.DAL.Entities;
 using Blazor.DAL.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace Blazor.DAL.Services
 {
@@ -13,9 +14,9 @@ namespace Blazor.DAL.Services
             _service = service;
         }
 
-        public IEnumerable<User> GetAll()
+        public async Task<IEnumerable<User>> GetAll()
         {
-            return _service.Users.ToList();
+            return await _service.Users.ToListAsync();
         }
     }
 }

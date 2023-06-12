@@ -1,4 +1,6 @@
-﻿using Blazor.BLL.Interfaces;
+﻿using Blazor.API.Entities;
+using Blazor.BLL.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,9 +18,11 @@ namespace Blazor.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll() 
+        [Authorize(Roles = "admin")]
+        public async Task<IActionResult> GetAll() 
         { 
-            return Ok(_service.GetAll());
+            
+            return Ok(await _service.GetAll());
         }
     }
 }

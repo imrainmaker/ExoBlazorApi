@@ -15,9 +15,10 @@ namespace Blazor.BLL.Services
             _service = service;
         }
 
-        public IEnumerable<User> GetAll()
+        public async Task<IEnumerable<User>> GetAll()
         {
-            return _service.GetAll()?.ToList().ToBLLList();
+            IEnumerable<User>? users = await _service.GetAll()?.ToBLLList();
+            return users;
         }
     }
 }

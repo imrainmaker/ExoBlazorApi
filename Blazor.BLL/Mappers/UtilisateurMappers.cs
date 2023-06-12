@@ -18,7 +18,7 @@ namespace Blazor.BLL.Mappers
             };
         }
 
-        public static List<User> ToBLLList(this List<DALUser> users)
+        public static List<User> ToBLLList(this IEnumerable<DALUser> users)
         {
             List<User> list = new List<User>();
             foreach (DALUser user in users)
