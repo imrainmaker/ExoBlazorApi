@@ -18,16 +18,16 @@ namespace Blazor.BLL.Mappers
             };
         }
 
-        public static List<User> ToBLLList(this IEnumerable<DALUser> users)
+        public static async Task<List<User>> ToBLLList(this Task<IEnumerable<DALUser>> usersTask)
         {
+            IEnumerable<DALUser> DalUsers = await usersTask;
             List<User> list = new List<User>();
-            foreach (DALUser user in users)
+            foreach (DALUser user in DalUsers)
             {
                 list.Add(ToBLL(user));
             }
 
             return list;
-
         }
     }
 }

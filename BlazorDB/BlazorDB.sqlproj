@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{90a990de-471f-4387-ba7c-3555cff93c04}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -56,5 +56,17 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Programmation" />
+    <Folder Include="Programmation\StoredProcedure" />
+    <Folder Include="Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Programmation\StoredProcedure\NewUser.sql" />
+    <Build Include="Programmation\StoredProcedure\Connexion.sql" />
+    <Build Include="Tables\Game.sql" />
+    <Build Include="Tables\User.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BlazorDB.publish.xml" />
   </ItemGroup>
 </Project>

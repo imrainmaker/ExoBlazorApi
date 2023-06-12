@@ -18,7 +18,6 @@ namespace Blazor.API.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "admin")]
         public async Task<IActionResult> GetAll() 
         { 
             

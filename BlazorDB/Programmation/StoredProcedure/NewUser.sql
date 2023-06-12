@@ -38,7 +38,7 @@ BEGIN
     DECLARE @hashedPasswd BINARY(64)
     SET @hashedPasswd = HASHBYTES('SHA2_512', @salt+@passwd+@Pepper)
 
-    INSERT INTO [User] (Email, Nom, Prenom, [Password], Salt)
-    VALUES (@mail, @nom, @prenom, @hashedPasswd, @salt)
+    INSERT INTO [Users] (Email, Nom, Prenom, [Password], Salt, [Role])
+    VALUES (@mail, @nom, @prenom, @hashedPasswd, @salt, 1)
 END
 RETURN 0
