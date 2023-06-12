@@ -63,8 +63,8 @@
   <ItemGroup>
     <Build Include="Programmation\StoredProcedure\NewUser.sql" />
     <Build Include="Programmation\StoredProcedure\Connexion.sql" />
-    <Build Include="Tables\Game.sql" />
-    <Build Include="Tables\User.sql" />
+    <Build Include="Tables\Games.sql" />
+    <Build Include="Tables\Users.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="BlazorDB.publish.xml" />

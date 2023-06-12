@@ -10,5 +10,8 @@ namespace Blazor.BLL.Interfaces
     public interface IUserService
     {
         Task <IEnumerable<User>> GetAll();
+        Task<User> AddUser(User user);
     }
+
+
 }
